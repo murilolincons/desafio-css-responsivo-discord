@@ -1,6 +1,8 @@
 # Desafio de Projeto CSS - Clone da Página do Discord 👾
 Para colocar em prática os conceitos sobre **Responsividade no CSS**, foi realizado este Desafio de Projeto do Clone da página do Discord.
+
 ---
+
 ## 1. Objetivo do Projeto
 
 - Praticar fundamentos de **Responsividade CSS**
