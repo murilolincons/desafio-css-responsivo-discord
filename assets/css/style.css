@@ -1,48 +1,60 @@
 @import url(../css/global.css);
 
-body {
-    display: flex;
-    flex-direction: column;
-}
 header {
     background-image: url("../images/background-header.png");
     background-size: cover;
     background-position: center;
+    padding: 20px;
+    width: 100vw;
 }
 #container-header {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 16px;
-}
-#container-header h1{
-    font-size: 1.5rem;
-    margin-top: 10px;
+    color: #fff;
 }
 #container-header p {  
-    margin-bottom: 16px; 
-    width: 305px;
-    font-size: 0.8rem;
-    color: #fff;
-    text-align: center;
+    max-width: 330px;
 }
-#container-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    font-size: 0.8rem;
-}
-#container-buttons .button-header {
-    width: 380px;
+#container-header .button-header {
+    width: 20rem;
     padding: 10px;
     border-radius: 28px;
 }
-#container-buttons #download {
+#container-header #download {
     background: #fff;
 }
-#container-buttons #browser {
+#container-header #browser {
     background: #23272a;
     color: #fff;
-    margin-bottom: 10px;
+}
+.section-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 25px;
+}
+.section-container picture {
+    max-width: 400px;
+    align-self: center
+}
+picture img {
+    max-width: 100%;
+}
+.section-container-01 {
+    background: #fff;
+}
+.section-container-02 {
+    background: #f6f6f6;
+}
+.section-container h1 {
+    color: #23272a;
+}
+footer {
+    background: #23272A;
+    padding: 50px;
+    text-align: center;
 }
