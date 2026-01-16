@@ -10,12 +10,13 @@ header {
 #container-header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 16px;
     color: #fff;
 }
 #container-header p {  
     max-width: 330px;
+    text-align: center;
 }
 #container-header .button-header {
     width: 20rem;
@@ -37,24 +38,55 @@ header {
     justify-content: space-around;
     gap: 25px;
 }
-.section-container picture {
+.box-container picture {
     max-width: 400px;
     align-self: center
 }
 picture img {
     max-width: 100%;
 }
-.section-container-01 {
+.section-container-white {
     background: #fff;
 }
-.section-container-02 {
+.section-container-gray {
     background: #f6f6f6;
 }
 .section-container h1 {
     color: #23272a;
 }
+.box-text h1, .box-text h2, .box-text p {
+    padding: 10px;
+}
 footer {
     background: #23272A;
     padding: 50px;
     text-align: center;
+}
+
+/*Layout Responsive*/
+
+@media screen and (min-width: 769px), (orientation: "landscape") {
+    #container-header p {
+        max-width: 769px;
+        padding-right: 80px;
+    }
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .box-text {
+        max-width: 533px;
+    }
+    #section-container-02 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #section-container-04 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
 }
